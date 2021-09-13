@@ -17,11 +17,11 @@ class Game
         puts "Seriously? No!"
         @current_player.lives -= 1
       end
-      puts "P1: #{@player_1.lives}/3 vs P2: #{@player_2.lives}/3"
-      @current_player = @current_player == @player_1 ? @player_2 : @player_1
-      puts "----- NEW TURN -----"
+        puts "P1: #{@player_1.lives}/3 vs P2: #{@player_2.lives}/3"
+        @current_player = @current_player == @player_1 ? @player_2 : @player_1
+        puts "----- NEW TURN -----"
     end
-    puts "#{@current_player.name} wins with a score of #{@current_player.lives}/3 \n----- GAME OVER -----\n Good bye!"
+      puts "#{@current_player.name} wins with a score of #{@current_player.lives}/3 \n----- GAME OVER -----\n Good bye!"
   end
 
 end
